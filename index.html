@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Surprise! </title>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&family=Homemade+Apple&display=swap'>
   <link rel="stylesheet" href="style.css">
@@ -18,6 +19,29 @@
     .paper {
       position: absolute;
       /* Optionally add a box-shadow for effect */
+    }
+
+    /* Mobile Countdown Styling */
+    @media (max-width: 768px) {
+      #countdown {
+        font-size: 1.5em !important;
+        padding: 12px 20px !important;
+        margin: 20px auto 25px auto !important;
+        max-width: 90% !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #countdown {
+        font-size: 1.2em !important;
+        padding: 10px 15px !important;
+        margin: 15px auto 20px auto !important;
+        max-width: 95% !important;
+      }
+
+      #countdown > div {
+        font-size: 0.9em !important;
+      }
     }
   </style>
 </head>
