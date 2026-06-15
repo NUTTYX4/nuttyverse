@@ -12,6 +12,8 @@ body {
   background-size: 1000px;
   background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
   background-position: center center;
+  margin: 0;
+  padding: 0;
 }
 
 .paper {
@@ -71,7 +73,78 @@ p {
   color: rgb(0,0,100);
   opacity: 0.75;
   user-select: none;
+  margin: 0;
   
   
   /* filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9)); */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .paper {
+    padding: 20px 40px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  .paper.heart {
+    width: 120px;
+    height: 120px;
+  }
+
+  .paper.heart::after {
+    background-size: 100px;
+  }
+
+  img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 500px;
+  }
+
+  .paper {
+    padding: 15px 25px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .paper.heart {
+    width: 100px;
+    height: 100px;
+  }
+
+  .paper.heart::after {
+    background-size: 80px;
+  }
+
+  img {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 360px) {
+  .paper {
+    padding: 12px 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .paper.heart {
+    width: 80px;
+    height: 80px;
+  }
+
+  .paper.heart::after {
+    background-size: 60px;
+  }
 }
